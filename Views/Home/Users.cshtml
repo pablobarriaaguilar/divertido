@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model List <User>
+
+<div class="text-center">
+    <p>Here is a lot of  USERS</p>
+    <h1 class="display-4">
+        @{
+            foreach (User usuario in @Model){
+                <h1>@usuario.FirstName</h1>
+            }
+        }
+    </h1>
+</div>
